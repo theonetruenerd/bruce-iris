@@ -10,11 +10,12 @@
 #include "modules/others/qrcode_menu.h"
 #include "modules/others/tururururu.h"
 #include "modules/others/u2f.h"
-// Removed: #include "modules/others/timer.h"
+#include "modules/others/voice_recognition_app.h"
 
 void OthersMenu::optionsMenu() {
     options = {
         {"QRCodes",      qrcode_menu                  },
+        {"Voice Recognition", voice_recognition_app   },
         {"Megalodon",    shark_setup                  },
 
 #if defined(MIC_SPM1423) || defined(MIC_INMP441)
