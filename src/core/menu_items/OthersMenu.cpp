@@ -11,11 +11,13 @@
 #include "modules/others/tururururu.h"
 #include "modules/others/u2f.h"
 #include "modules/others/voice_recognition_app.h"
+#include "modules/others/grove_nfc.h"
 
 void OthersMenu::optionsMenu() {
     options = {
         {"QRCodes",      qrcode_menu                  },
         {"Voice Recognition", voice_recognition_app   },
+        {"Grove NFC", nfcApp},
         {"Megalodon",    shark_setup                  },
 
 #if defined(MIC_SPM1423) || defined(MIC_INMP441)
